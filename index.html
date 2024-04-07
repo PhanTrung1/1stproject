@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel = "stylesheet" href="style.css" />
+    <link rel = "stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class ="logo"> Phan Trung</div>
+        <div>
+            <ul class="nav-links">
+                <li> <a href="#about"> About</a></li>
+                <li> <a href="#hobbies">Hobbies</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class ="logo"> Phan Trung</div>
+        <div class ="hamburger-menu">
+            <div class = "hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li> <a href="#about" onclick="toggleMenu()"> About</a></li>
+                <li> <a href="#hobbies" onclick="toggleMenu()">Hobbies</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="header-text"> 
+        <div class ="header-text">
+            <span class= "text1">Welcome to</span>
+            <span class="text2">My First Website Project</span>
+        </div>
+    </section>
+    <section id="about">
+        <div class ="section_text">
+            <p class="section_text_p1"> Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class = "section-container">
+                <div class = "section_pic-container">
+                <img   
+                    src="./section_pic/zodiac_sign.jpg" 
+                    alt="zodiac sign"
+                    class="zodiac_sign" />
+                </div>
+            <div class="about-details-container">
+            <div class ="about-containers">
+                <div class="details-container">
+                    <h3>My Zodiac Sign</h3>
+                    <p> Sagittarius </p>
+                </div>
+                <div class="details-container">      
+                    <h3>My favourite food are </h3>
+                    <p> Sushi <br /> Hamburger </p>
+                </div>
+            </div>
+            <div class = "text-container">
+                <p>I am Phan Trung, a Vietnamese Computer Science Engineering student at University of Debrecen. My hobbies are Traveling and playing football
+                </p>
+            </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="hobbies">
+        <p class = "section_text_p1"> Photos about my</p>
+        <h1 class=" title"> Hobbies </h1>
+        <div class = "hobbies-container">
+            <div class ="about-containers">
+            <div class = "details-container color-container">
+                <div class="football-container">
+                    <img 
+                    src="./section_pic/football2.jpg" 
+                    alt="Football 1" 
+                    class="football-img">
+                </div>
+            </div>
+            <div class = "details-container color-container">
+                <div class="football-container">
+                    <img 
+                    src="./section_pic/football1.jpg" 
+                    alt="football 2" 
+                    class="football-img">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    
+</body>
+</html>
